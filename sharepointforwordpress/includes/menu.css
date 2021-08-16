@@ -1,0 +1,66 @@
+ul.topnav li {
+	float: left;
+	margin: 0;
+	padding: 0 4px 0px 4px;
+	position: relative; /*--Declare X and Y axis base for sub navigation--*/
+        
+}
+ul.topnav li a:hover{
+	/*background: url(topnav_hover.gif) no-repeat center top;*/
+        color:#0072BC;
+        text-decoration:underline;
+       
+}
+ul.topnav li {
+        border:1px solid transparent;
+}
+ul.topnav li ul li {
+        border:none;
+}
+
+ul.topnav li span { /*--Drop down trigger styles--*/
+	width: 17px;
+	height: 25px;
+	float: left;
+	background: url(../images/icons/menu-down.gif) no-repeat center bottom;
+}
+
+ul.topnav li span.subhover {
+        background-position: center bottom;
+        cursor: pointer; /*--Hover effect for trigger--*/
+}
+ul.topnav li ul.sub-menu {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+        top: 25px;
+	background: #FFF;
+	margin: 0; padding: 0;
+	display:none;
+	float: left;
+        width:170px;
+	border: 1px solid #B8BABD;
+        border-top:none;
+        margin-left:-5px;
+        margin-top:1px;
+      
+}
+ul.topnav li ul.sub-menu li ul {
+        border:none;
+        margin-left:0;
+        margin-top:0;
+        padding-top:0;
+}
+ul.topnav li ul.sub-menu li{
+	margin: 0;
+        padding: 0;
+	clear: both;
+}
+html ul.topnav li ul.sub-menu li a {
+	float: left;
+        width:128px;
+	background: #fff ;
+	padding:5px 20px;
+}
+html ul.topnav li ul.sub-menu li a:hover { /*--Hover effect for subnav links--*/
+	background: #CCC;
+}
